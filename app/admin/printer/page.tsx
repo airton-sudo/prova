@@ -16,15 +16,15 @@ export default async function ListPrinter() {
 
             <table>
                 <thead>
-                    <tr> <td style={{padding: '0 12px'}}>Marca</td> <td style={{padding: '0 12px'}}>Modelo</td></tr>
+                    <tr> <td style={{padding: '0 1em'}}>Marca</td> <td style={{padding: '0 1em'}}>Modelo</td></tr>
                 </thead>
                 <tbody>
                     {
                         rows.map((printer) => {
                             return (
                                 <tr key={printer.id}>
-                                    <td style={{padding: '0 10px'}}>{printer.brand}</td> 
-                                    <td style={{padding: '0 10px'}}>{printer.model}</td> 
+                                    <td style={{padding: '0 1em'}}>{printer.brand}</td> 
+                                    <td style={{padding: '0 1em'}}>{printer.model}</td> 
                                 <td>
                                     <form >
                                      <input type="text" hidden name="id" value={printer.id}/>   
