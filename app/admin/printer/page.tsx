@@ -12,11 +12,11 @@ export default async function ListPrinter() {
     const { rows } = await sql`SELECT * from printer`;
     return (
         <div>
-            <h1 className="text-center text-black">Lista de impressoras</h1>
+            <h1 className="text-black text-center text-4xl">Lista de impressoras</h1>
 
             <table>
                 <thead>
-                    <tr> <td>Marca da impressora</td> <td>Modelo da impressora</td></tr>
+                    <tr> <td>Marca</td> <td>Modelo</td></tr>
                 </thead>
                 <tbody>
                     {
